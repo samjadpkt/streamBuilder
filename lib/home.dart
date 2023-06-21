@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
 Stream<int?> getnumber() async* {
   await Future.delayed(Duration(seconds: 4));
   //yield is a keyword used for returning values,here we cant use return keyword because here we want to return more than one value
-  1;
+ yield 1;
   await Future.delayed(Duration(seconds: 4));
   yield 2;
   await Future.delayed(Duration(seconds: 4));
